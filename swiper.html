@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/swiper.css">
+    <style type="text/css" media="screen">
+        html,
+        body {
+            padding: 0;
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 40px 0 10px 0;
+        }
+
+        .swiper-container {
+            height: 120px;
+        }
+
+        .swiper-container .swiper-slide {
+            font-size: 40px;
+            color: #fff;
+            line-height: 120px;
+            text-align: center;
+        }
+
+        .swiper-container7 .swiper-slide {
+            font-size: 18px;
+            width: 100px;
+        }
+
+        .swiper-container8 .swiper-slide {
+            width: auto;
+            font-size: 18px;
+        }
+
+        .swiper-container9 .swiper-slide {
+            font-size: 18px;
+        }
+
+        .both-control .tab-button {
+            height: 40px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .both-control .tab-button .swiper-container10 {
+            height: 100%;
+        }
+
+        .both-control .tab-button .swiper-container10 .swiper-slide {
+            width: auto;
+            line-height: 40px;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .both-control .tab-button .swiper-container10 .swiper-slide span {
+            display: block;
+            margin: 0 10px;
+        }
+
+        .both-control .tab-button .swiper-container10 .swiper-slide.swiper-slide-active {
+            font-weight: bold;
+            color: rgb(36, 92, 247);
+        }
+
+        .both-control .tab-content {
+            height: 300px;
+        }
+
+        .both-control .tab-content .swiper-container11 {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="root">
+        <h4>1、基础轮播图</h4>
+        <div class="swiper-container swiper-container1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: orangered">Slide 1</div>
+                <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 2</div>
+                <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 3</div>
+                <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 4</div>
+                <div class="swiper-slide" style="background: rgb(57, 8, 192)">Slide 5</div>
+            </div>
+        </div>
+
+
+        <h4>2、垂直方向</h4>
+        <div class="swiper-container swiper-container2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: orangered">Slide 1</div>
+                <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 2</div>
+                <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 3</div>
+                <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 4</div>
+                <div class="swiper-slide" style="background: rgb(57, 8, 192)">Slide 5</div>
+            </div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"><span class="arrow"></span></div>
+            <div class="swiper-button-next"><span class="arrow"></span></div>
+        </div>
+
+        <h4>3、开启pagination和上下翻页功能</h4>
+        <div class="swiper-container swiper-container3">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: orangered">Slide 1</div>
+                <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 2</div>
+                <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 3</div>
+                <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 4</div>
+                <div class="swiper-slide" style="background: rgb(57, 8, 192)">Slide 5</div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"><span class="arrow"></span></div>
+            <div class="swiper-button-next"><span class="arrow"></span></div>
+        </div>
+
+        <h4>4、无缝滚动开启 loop 选项</h4>
+        <div class="swiper-container swiper-container4">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: orangered">Slide 1</div>
+                <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 2</div>
+                <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 3</div>
+                <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 4</div>
+                <div class="swiper-slide" style="background: rgb(57, 8, 192)">Slide 5</div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"><span class="arrow"></span></div>
+            <div class="swiper-button-next"><span class="arrow"></span></div>
+        </div>
+
+        <h4>5、spaceBetween slide 间距 默认为0</h4>
+        <div class="swiper-container swiper-container5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: orangered">Slide 1</div>
+                <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 2</div>
+                <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 3</div>
+                <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 4</div>
+                <div class="swiper-slide" style="background: rgb(57, 8, 192)">Slide 5</div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"><span class="arrow"></span></div>
+            <div class="swiper-button-next"><span class="arrow"></span></div>
+        </div>
+
+        <h4>6、自动播放</h4>
+        <div class="swiper-container swiper-container6">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: orangered">Slide 1</div>
+                <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 2</div>
+                <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 3</div>
+                <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 4</div>
+                <div class="swiper-slide" style="background: rgb(57, 8, 192)">Slide 5</div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"><span class="arrow"></span></div>
+            <div class="swiper-button-next"><span class="arrow"></span></div>
+        </div>
+
+        <h4>7、设置slider容器能够同时显示的slides数量</h4>
+        <div class="swiper-container swiper-container7">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: orangered">Slide 1</div>
+                <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 2</div>
+                <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 3</div>
+                <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 4</div>
+                <div class="swiper-slide" style="background: rgb(57, 8, 192)">Slide 5</div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"><span class="arrow"></span></div>
+            <div class="swiper-button-next"><span class="arrow"></span></div>
+        </div>
+
+        <h4>8、设置slider容器能auto</h4>
+        <div class="swiper-container swiper-container8">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: orangered">Slide 1</div>
+                <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 2</div>
+                <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 3</div>
+                <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 4</div>
+                <div class="swiper-slide" style="background: rgb(57, 8, 192)">Slide 5</div>
+                <div class="swiper-slide" style="background: orangered">Slide 6</div>
+                <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 7</div>
+                <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 8</div>
+                <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 9</div>
+                <div class="swiper-slide" style="background: orangered">Slide 10</div>
+                <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 11</div>
+                <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 12</div>
+                <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 13</div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"><span class="arrow"></span></div>
+            <div class="swiper-button-next"><span class="arrow"></span></div>
+        </div>
+
+        <h4>9、freeMode 无缝合模式，相当于滑动滚动</h4>
+        <div class="swiper-container swiper-container9">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background: orangered">Slide 1</div>
+                <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 2</div>
+                <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 3</div>
+                <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 4</div>
+                <div class="swiper-slide" style="background: rgb(57, 8, 192)">Slide 5</div>
+                <div class="swiper-slide" style="background: orangered">Slide 6</div>
+                <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 7</div>
+                <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 8</div>
+                <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 9</div>
+                <div class="swiper-slide" style="background: orangered">Slide 10</div>
+                <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 11</div>
+                <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 12</div>
+                <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 13</div>
+            </div>
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"><span class="arrow"></span></div>
+            <div class="swiper-button-next"><span class="arrow"></span></div>
+        </div>
+
+        <h4>10、双向控制，类似今日头条</h4>
+        <div class="both-control">
+            <div class="tab-button">
+                <div class="swiper-container swiper-container10">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><span>Slide 1</span></div>
+                        <div class="swiper-slide"><span>Slide 2</span></div>
+                        <div class="swiper-slide"><span>Slide 3</span></div>
+                        <div class=" swiper-slide"><span>Slide 4</span></div>
+                        <div class="swiper-slide"><span>Slide 5</span></div>
+                        <div class="swiper-slide"><span>Slide 6</span></div>
+                        <div class="swiper-slide"><span>Slide 7</span></div>
+                        <div class="swiper-slide"><span>Slide 8</span></div>
+                        <div class=" swiper-slide"><span>Slide 9</span></div>
+                        <div class="swiper-slide"><span>Slide 10</span></div>
+                        <div class="swiper-slide"><span>Slide 11</span></div>
+                        <div class="swiper-slide"><span>Slide 12</span></div>
+                        <div class=" swiper-slide"><span>Slide 13</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="swiper-container swiper-container11">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background: orangered">Slide 1</div>
+                        <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 2</div>
+                        <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 3</div>
+                        <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 4</div>
+                        <div class="swiper-slide" style="background: rgb(57, 8, 192)">Slide 5</div>
+                        <div class="swiper-slide" style="background: orangered">Slide 6</div>
+                        <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 7</div>
+                        <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 8</div>
+                        <div class=" swiper-slide" style="background: rgb(230, 115, 115)">Slide 9</div>
+                        <div class="swiper-slide" style="background: orangered">Slide 10</div>
+                        <div class="swiper-slide" style="background: rgb(24, 206, 206)">Slide 11</div>
+                        <div class="swiper-slide" style="background: rgb(17, 184, 26)">Slide 12</div>
+                        <div class="swiper-slide" style="background: rgb(230, 115, 115)">Slide 13</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/swiper.js"></script>
+        <script type="text/javascript">
+            // var swiper2 = new Swiper('.swiper-container2', {
+            //     // direction: 'vertical',
+            //     // slidesPerView: 'auto',
+            //     pagination: '.swiper-container1 .swiper-pagination',
+            //     // loop: true,
+            //     // autoplay: 2000,
+            //     spaceBetween: 0,
+            //     autoplayDisableOnInteraction: false,
+            //     // freeMode: true,
+            //     spaceBetween: 30,
+            //     paginationClickable: true,
+            //     speed: 300
+            // })
+            var swiper1 = new Swiper('.swiper-container1');
+
+            var swiper2 = new Swiper('.swiper-container2', {
+                direction: 'vertical',
+            })
+
+            var swiper3 = new Swiper('.swiper-container3', {
+                pagination: '.swiper-container3 .swiper-pagination',
+                paginationClickable: true, // 为true时可以点击点进行翻页 默认为false 不翻页
+            })
+
+            var swiper4 = new Swiper('.swiper-container4', {
+                pagination: '.swiper-container4 .swiper-pagination',
+                paginationClickable: true, // 为true时可以点击点进行翻页 默认为false 不翻页
+                loop: true,
+                // slidesPerView: 2,
+                speed: 300
+            })
+
+            var swiper5 = new Swiper('.swiper-container5', {
+                pagination: '.swiper-container5 .swiper-pagination',
+                paginationClickable: true, // 为true时可以点击点进行翻页 默认为false 不翻页
+                spaceBetween: 20
+            })
+
+            var swiper6 = new Swiper('.swiper-container6', {
+                pagination: '.swiper-container6 .swiper-pagination',
+                paginationClickable: true, // 为true时可以点击点进行翻页 默认为false 不翻页
+                loop: true,
+                autoplay: 1000, // 自动播放的开关 默认为false
+                autoplayDisableOnInteraction: false // 用户操作swiper之后，是否禁止autoplay。默认为true：停止。
+            })
+
+            var swiper7 = new Swiper('.swiper-container7', {
+                pagination: '.swiper-container7 .swiper-pagination',
+                paginationClickable: true, // 为true时可以点击点进行翻页 默认为false 不翻页
+                slidesPerView: 'auto',
+                slideToClickedSlide: true,
+                // freeMode: true,
+                loop: true,
+                onClick: function (swiper) {  
+                },
+                onTap: function (swiper) {  
+                    
+                }
+            })
+            var swiper8 = new Swiper('.swiper-container8', {
+                pagination: '.swiper-container8 .swiper-pagination',
+                paginationClickable: true, // 为true时可以点击点进行翻页 默认为false 不翻页
+                slidesPerView: 'auto',
+                loop: true,
+                spaceBetween: 10
+            })
+
+            var swiper9 = new Swiper('.swiper-container9', {
+                freeMode: true,
+                bounce: true, // 是否开启到惯性回弹 默认为true
+                slidesPerView: 3
+            })
+            var swiper10, swiper11;
+            swiper10 = new Swiper('.swiper-container10', {
+                slidesPerView: 'auto',
+                freeMode: true,
+                slideToClickedSlide: true,
+                bounce: true, // 是否开启到惯性回弹 默认为true
+                onClick: function (swiper) {  
+                },
+            })
+
+            swiper11 = new Swiper('.swiper-container11', {
+                speed: 300,
+                onClick: function (swiper) {  
+                },
+            })
+            swiper10.control = swiper11;
+            swiper11.control = swiper10;
+        </script>
+</body>
+
+</html>
